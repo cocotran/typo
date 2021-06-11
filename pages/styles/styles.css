@@ -1,0 +1,41 @@
+/* @import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities"; */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,500;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap");
+
+body {
+  font-family: "IBM Plex Sans", sans-serif;
+  background-color: #f9f9fa;
+}
+
+.cursor {
+  background-color: #aaffff;
+}
+
+.done {
+  color: #68d391;
+}
+
+.hidden {
+  display: none;
+}
+
+.bg-navbar {
+  background-color: #333333;
+}
+
+.text-navbar {
+  color: #a5a5a5;
+}
+
+#typing {
+  font-family: "Roboto Mono", monospace;
+}
+
+.line {
+  height: 1px;
+}

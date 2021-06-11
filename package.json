@@ -1,0 +1,21 @@
+{
+  "name": "type-type",
+  "version": "1.0.0",
+  "description": "",
+  "main": "scripts/scripts.js",
+  "dependencies": {
+    "@fullhuman/postcss-purgecss": "^3.0.0",
+    "autoprefixer": "^9.8.6",
+    "postcss": "^8.1.4",
+    "postcss-cli": "^8.1.0",
+    "tailwindcss": "^1.9.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "postcss styles/styles.css -o styles/tailwind.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

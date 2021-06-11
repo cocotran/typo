@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="/pages/styles/styles.css" />
+    <link rel="stylesheet" type="text/css" href="/pages/styles/tailwind.css" />
+    <title>Type It</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav
+      class="py-2 px-20 flex items-center justify-between bg-navbar text-navbar font-light"
+    >
+      <img src="img/logo.svg" alt="Co.Type logo" />
+      <div class="flex mr-40">
+        <div class="text-gray-100">Facts</div>
+        <div class="ml-16">News</div>
+        <div class="ml-16">Music</div>
+      </div>
+    </nav>
+
+    <!-- body -->
+    <div class="h-screen pt-12 px-20 text-center">
+      <!-- game div -->
+      <div
+        class="w-3/5 px-8 py-12 border border-gray-400 rounded-lg inline-flex justify-center bg-white"
+      >
+        <!-- this div will turn into text -->
+        <div id="typing" class="text-lg tracking-wide"></div>
+      </div>
+      <!-- this div will turn into source -->
+      <div class="w-3/5 mt-5 inline-flex justify-end">
+        <div id="source" class="text-gray-700 text-sm"></div>
+      </div>
+
+      <!-- stats div -->
+      <div id="stats-div" class="flex justify-center">
+        <div class="mt-10 w-3/5">
+          <p class="pb-1 text-gray-800 text-left border-b border-gray-400">
+            Result
+          </p>
+          <div class="mt-5 text-black inline-flex">
+            <div>
+              <p id="wpm" class="text-4xl"></p>
+              <p id="wpmtext" class="text-xl"></p>
+            </div>
+          </div>
+          <div class="ml-40 mt-5 text-black inline-flex">
+            <div>
+              <p id="accuracy" class="text-4xl"></p>
+              <p id="accuracytext" class="text-xl"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-5 flex justify-center">
+        <div class="w-3/5">
+          <div class="w-full line border-t border-gray-400"></div>
+          <button
+            id="startGame"
+            class="mt-5 px-3 py-1 text-white bg-blue rounded-lg hover:border-blue-300"
+            onclick="startGame()"
+          >
+            Start Typing
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer section -->
+    <footer
+      class="py-3 px-20 flex items-center justify-between text-gray-600 font-light text-sm border-t border-gray-300"
+    >
+      <img src="img/logo-gray.svg" alt="Co.Type logo" />
+      <div class="flex">
+        <a href="https://colculator.com/" target="blank" class="">colculator.com</a>
+        <div class="ml-16">Facts</div>
+        <div class="ml-16">News</div>
+        <div class="ml-16">Music</div>
+        <a
+          href="mailto:feedback@colculator.com?subject=Feedback"
+          class="ml-16"
+          >Feedback
+          </a>
+      </div>
+      <div>
+        <p>Made with️ ❤️ © 2020 Co. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- css -->
+    <style>
+      .bg-blue {
+        background-color: #0177ed;
+      }
+    </style>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-analytics.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      var firebaseConfig = {
+        apiKey: "AIzaSyCv6x5xUdwQ-tEvLZQf4xMK6FE2weKuRt0",
+        authDomain: "co-type.firebaseapp.com",
+        databaseURL: "https://co-type.firebaseio.com",
+        projectId: "co-type",
+        storageBucket: "co-type.appspot.com",
+        messagingSenderId: "892704143313",
+        appId: "1:892704143313:web:0324c2861aaf34aa9e92f0",
+        measurementId: "G-S0X9GYLW6S"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+    </script>
+    <script src="/pages/scripts/scripts.js"></script>
+  </body>
+</html>
